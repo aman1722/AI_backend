@@ -3,6 +3,8 @@ const { history, answerFeedback, question } = require('../controllers/interview.
 
 const interviewRouter = express.Router();
 
+
+//get question route
 interviewRouter.post('/questions', question)
 
 interviewRouter.post("/answer" , answerFeedback)
